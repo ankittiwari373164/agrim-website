@@ -8,14 +8,14 @@ class MyHeader extends HTMLElement {
                 <div class="container header-container">
                     
                     <div class="logo">
-                        <a href="index.html" style="text-decoration: none; color: #1F1F39;">
-                            <img src="images/Agrim-Logo-removebg-preview.png" alt="Agrim Logo"> 
+                        <a href="/" style="text-decoration: none; color: #1F1F39;">
+                            <img src="/images/Agrim-Logo-removebg-preview.png" alt="Agrim Logo"> 
                         </a>
                     </div>
 
                     <nav class="main-menu">
                         <ul>
-                            <li><a href="/home">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="/about">About</a></li>
                             
                             <li class="has-drodpown">
