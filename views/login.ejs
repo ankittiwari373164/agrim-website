@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Agrim Classes</title>
+    <style>
+        :root { --bg: #1a1a2e; --card: #16213e; --text: #fff; --accent: #FF725E; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .login-card { background: var(--card); padding: 40px; width: 100%; max-width: 350px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); text-align: center; border-top: 4px solid var(--accent); }
+        h2 { margin-bottom: 5px; color: #fff; letter-spacing: 1px; }
+        p { color: #888; font-size: 0.9rem; margin-bottom: 25px; }
+        input { width: 100%; padding: 12px; margin-bottom: 15px; background: #0f3460; border: 1px solid #333; border-radius: 6px; color: white; font-size: 1rem; box-sizing: border-box; transition: 0.3s; }
+        input:focus { border-color: var(--accent); outline: none; background: #133b6b; }
+        button { width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #e64a19; transform: translateY(-2px); }
+        .error-msg { background: rgba(255, 114, 94, 0.2); color: #ff8c9e; padding: 10px; border-radius: 4px; font-size: 0.9rem; margin-bottom: 20px; border: 1px solid var(--accent); }
+        .footer-text { margin-top: 20px; font-size: 0.8rem; color: #555; }
+    </style>
+</head>
+<body>
+<div class="login-card">
+    <h2>📚 AGRIM CLASSES</h2>
+    <p>Admin Portal</p>
+
+    <% if (error) { %>
+        <div class="error-msg">⚠️ <%= error %></div>
+    <% } %>
+
+    <form action="/login" method="POST">
+        <input type="password" name="password" placeholder="Enter Access Code" required autofocus>
+        <button type="submit">Unlock Dashboard</button>
+    </form>
+
+    <div class="footer-text">
+        &copy; 2026 Agrim Classes
+    </div>
+</div>
+</body>
+</html>

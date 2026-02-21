@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= seo ? seo.title : 'Agrim Classes' %></title>
+<meta name="description" content="<%= seo ? seo.desc : 'Best Coaching Institute in Deoli' %>">
+<meta name="keywords" content="<%= seo ? seo.keywords : 'education, coaching' %>">
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <script src="header.js"></script>
+    <my-header></my-header>
+
+    <section class="breadcrumb-area">
+
+        <div class="shape-globe">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#FFA500" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M2 12h20"></path>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="shape-loop">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#C4C6E5" stroke-width="12"
+                stroke-linecap="round">
+                <path d="M30,20 Q60,5 80,40 T50,90 T20,60" />
+            </svg>
+        </div>
+
+        <div class="shape-scribbles">
+            <svg width="80" height="100" viewBox="0 0 100 100" fill="none" stroke="#FFC07F" stroke-width="3">
+                <path d="M80,10 Q90,20 85,30 T90,50" />
+                <path d="M60,15 Q70,5 75,25 T80,40" />
+                <path d="M90,5 Q100,15 95,25 T100,45" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="banner-content align-left">
+                <h1 class="page-title">Contact Us</h1>
+                <ul class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="separator"><i class="fas fa-chevron-right"></i></li>
+                    <li class="active">Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us-content">
+    <div class="" style="margin-left: 70px; margin-right: 70px;">
+        
+        <div class="contact-info-grid">
+            
+            <div class="c-info-card">
+                <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h4>Our Address</h4>
+                <p>B-9, 2nd Floor, Above Prabhu Dayal Jewellers Duggal Colony, Devli Road, Khanpur, New Delhi</p>
+            </div>
+
+            <div class="c-info-card">
+                <div class="icon-box">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:hello@eduvibe.com">agrimclassess@gmail.com</a></p>
+            </div>
+
+            <div class="c-info-card">
+                <div class="icon-box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h4>Call Us</h4>
+                <p><a href="tel:+1234567890">+919999474137</a></p>
+            </div>
+
+        </div>
+
+        <div class="contact-form-area">
+            <div class="form-row">
+                
+                <div class="form-text-col">
+                    <span class="sub-heading">Contact Us</span>
+                    <h2 class="main-heading">Get In Touch With Us</h2>
+                    <p class="description">
+                        Achieve Your Career Ambitions with Agrim Classes – India’s Leading Coaching Institute.
+                    </p>
+                </div>
+
+                <div class="form-box-col">
+                    <form class="eduvibe-form">
+                        <div class="input-group-half">
+                            <input type="text" placeholder="Name*" required>
+                            <input type="email" placeholder="Email*" required>
+                        </div>
+                        <div class="input-group-half">
+                            <input type="tel" placeholder="Phone">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="input-group-full">
+                            <textarea placeholder="Your Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="google-map-area">
+    <div class="map-container">
+        <iframe 
+            src="https://maps.google.com/maps?q=Agrim%20Classes%20Khanpur%20Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+<my-footer></my-footer>
+
+
+<script src="footer.js"></script>
+</body>
